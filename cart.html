@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - ShopEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo">
+                ShopEase
+            </a>
+<nav class="nav-links">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="index.html#products">
+        Products
+    </a>
+
+    <a href="cart.html" class="active">
+        Cart <span id="cart-count">0</span>
+    </a>
+
+    <a href="checkout.html">
+        Checkout
+    </a>
+
+</nav>
+
+        </div>
+
+    </header>
+
+
+    <main class="container cart-section">
+
+        <div class="section-heading">
+
+            <p class="section-small">
+                YOUR SHOPPING CART
+            </p>
+
+            <h1>Shopping Cart</h1>
+
+        </div>
+
+
+
+        <div class="cart-layout">
+
+            <!-- Cart Items -->
+            <div
+                id="cart-items"
+                class="cart-items">
+
+                <!-- Cart items will be added by JavaScript -->
+
+            </div>
+
+
+            
+            <aside class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+
+                    <span>Items</span>
+
+                    <span id="summary-items">
+                        0
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Subtotal</span>
+
+                    <span id="cart-subtotal">
+                        $0.00
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Shipping</span>
+
+                    <span>
+                        Free
+                    </span>
+
+                </div>
+
+
+                <div class="summary-divider"></div>
+
+
+                <div class="summary-total">
+
+                    <span>Total</span>
+
+                    <span id="cart-total">
+                        $0.00
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="checkout.html"
+                    id="checkout-btn"
+                    class="btn checkout-btn">
+
+                    Proceed to Checkout
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="continue-shopping">
+
+                    ← Continue Shopping
+
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <h3>ShopEase</h3>
+
+            <p>
+                Your simple and modern online shopping experience.
+            </p>
+
+            <p class="copyright">
+                © 2026 ShopEase. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

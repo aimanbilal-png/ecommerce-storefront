@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - E-Commerce Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container nav">
+
+            <a href="index.html" class="logo">
+                ShopEase
+            </a>
+
+           <nav class="nav-links">
+
+    <a href="index.html" class="active">
+        Home
+    </a>
+
+    <a href="index.html#products">
+        Products
+    </a>
+
+    <a href="cart.html">
+        Cart <span id="cart-count">0</span>
+    </a>
+
+    <a href="checkout.html">
+        Checkout
+    </a>
+
+</nav>
+
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="container hero-content">
+
+            <div>
+                <p class="hero-small">WELCOME TO SHOPEASE</p>
+
+                <h1>
+                    Find Products You
+                    <span>Love.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover amazing products at great prices.
+                    Search, explore and shop your favorite items.
+                </p>
+
+                <a href="#products" class="btn">
+                    Shop Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <main class="container products-section" id="products">
+
+        <div class="section-heading">
+            <div>
+                <p class="section-small">OUR STORE</p>
+                <h2>Explore Products</h2>
+            </div>
+        </div>
+
+
+    
+        <div class="filters">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search products..."
+                >
+            </div>
+
+            <div class="category-box">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        
+        <div id="loading" class="loading">
+            <p>Loading products...</p>
+        </div>
+
+
+        <div id="error-message" class="error-message hidden">
+            <p>
+                Sorry, something went wrong while loading products.
+            </p>
+        </div>
+
+
+    
+        <div id="product-container" class="product-grid">
+            <!-- Products will be added using JavaScript -->
+        </div>
+
+    </main>
+
+
+    
+    <footer class="footer">
+        <div class="container">
+
+            <h3>ShopEase</h3>
+
+            <p>
+                Your simple and modern online shopping experience.
+            </p>
+
+            <p class="copyright">
+                © 2026 ShopEase. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
